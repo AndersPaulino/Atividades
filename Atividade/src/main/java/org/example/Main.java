@@ -1,5 +1,6 @@
 package org.example;
 import org.example.service.MediaPonderadaService;
+import org.example.service.MediaPositivoService;
 
 import java.io.IOException;
 
@@ -16,7 +17,10 @@ public class Main {
             // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
             System.out.println("i = " + i);
         }
-        MediaPonderadaService service = new MediaPonderadaService();
-        service.calcularMedia();
+        /*MediaPonderadaService service = new MediaPonderadaService();
+        service.calcularMedia();*/
+        MediaPositivoService service = new MediaPositivoService();
+        service.calcularMediaPositivo();
+
     }
 }
