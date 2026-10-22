@@ -65,4 +65,28 @@ public class TipoNumeroSerivce {
 
         sc.close();
     }
+
+    public void calcularIntervaloEntreNumeros(){
+        int n = sc.nextInt();
+
+        int in = 0;
+        int out = 0;
+
+        for (int i = 0; i < n; i++) {
+
+            int x = sc.nextInt();
+
+            if (x >= 10 && x <= 20) {
+                in++;
+            } else {
+                out++;
+            }
+        }
+
+        System.out.println("Quantidades de Números entre(in) 10 e 20 e quantos estão fora(out)!");
+        System.out.println(in + " in");
+        System.out.println(out + " out");
+
+        sc.close();
+    }
 }
