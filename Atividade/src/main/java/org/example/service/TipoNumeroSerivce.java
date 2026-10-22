@@ -46,4 +46,23 @@ public class TipoNumeroSerivce {
 
         sc.close();
     }
+
+    public void calcularMaiorPosicao(){
+        int maior = 0;
+        int posicao = 0;
+
+        for (int i = 1; i <= 100; i++) {
+            int x = sc.nextInt();
+
+            if (x > maior) {
+                maior = x;
+                posicao = i;
+            }
+        }
+
+        System.out.println(maior);
+        System.out.println(posicao);
+
+        sc.close();
+    }
 }
