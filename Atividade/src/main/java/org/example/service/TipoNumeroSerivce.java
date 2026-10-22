@@ -46,4 +46,47 @@ public class TipoNumeroSerivce {
 
         sc.close();
     }
+
+    public void calcularMaiorPosicao(){
+        int maior = 0;
+        int posicao = 0;
+
+        for (int i = 1; i <= 100; i++) {
+            int x = sc.nextInt();
+
+            if (x > maior) {
+                maior = x;
+                posicao = i;
+            }
+        }
+
+        System.out.println(maior);
+        System.out.println(posicao);
+
+        sc.close();
+    }
+
+    public void calcularIntervaloEntreNumeros(){
+        int n = sc.nextInt();
+
+        int in = 0;
+        int out = 0;
+
+        for (int i = 0; i < n; i++) {
+
+            int x = sc.nextInt();
+
+            if (x >= 10 && x <= 20) {
+                in++;
+            } else {
+                out++;
+            }
+        }
+
+        System.out.println("Quantidades de Números entre(in) 10 e 20 e quantos estão fora(out)!");
+        System.out.println(in + " in");
+        System.out.println(out + " out");
+
+        sc.close();
+    }
 }
