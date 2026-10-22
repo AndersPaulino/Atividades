@@ -16,4 +16,16 @@ public class ContadorImparService {
         }
         sc.close();
     }
+    public void calcularProximosImpares(){
+        int A = sc.nextInt();
+        int contador = 0;
+
+        for(int i = 0; contador < 6; i++){
+            if((A + i) %2!=0){
+                System.out.println(A+i);
+                contador++;
+            }
+        }
+        sc.close();
+    }
 }
